@@ -1,4 +1,4 @@
-## COVID-19 DPC Semantic Web
+## COVID-19 DPC Semantic Web - RDF Data Cube Vocabulary
 
 Il progetto intende modellare i dataset del monitoraggio sanitario COVID-19 in Italia, 
 pubblicati dalla Protezione Civile quotidianamente, disponibili  sul
@@ -175,26 +175,46 @@ done
 ```
 
 ## SPARQL Endpoint
-I dati generati sono disponibili al seguente [SPARQL Endpoint](), aggiornato quotidianamente. 
-Di seguito un esempio di query in grado di recuperare ad esempio tutti i dati sanitari della Lombardia di giorno 20 marzo 2020. 
-L'esempio live è disponibile al seguente [link](link)
+I dati generati sono disponibili al seguente [SPARQL Endpoint](http://45.62.242.205:8890/sparql), aggiornato quotidianamente. 
+
+### Query
+
+* **Quali sono i dataset presenti nello store?**
+
+[Demo](http://45.62.242.205:8890/sparql?default-graph-uri=&query=PREFIX+qb%3A+%3Chttp%3A%2F%2Fpurl.org%2Flinked-data%2Fcube%23%3E+%0D%0APREFIX+sdmx-dimension%3A+%3Chttp%3A%2F%2Fpurl.org%2Flinked-data%2Fsdmx%2F2009%2Fdimension%23%3E+%0D%0APREFIX+dpc%3A+%3Chttp%3A%2F%2Fwww.protezionecivile.gov.it%2Fns%2F%3E%0D%0Aprefix+l0%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2Fl0%2F%3E+%0D%0ASELECT+%3Fdataset+%3Flabel%0D%0AWHERE+%7B%0D%0A%3Fdataset+a+qb%3ADataset%3B%0D%0A+++++++++rdfs%3Alabel+%3Flabel.%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on)
 
 ```sparql
 PREFIX qb: <http://purl.org/linked-data/cube#> 
 PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> 
 PREFIX dpc: <http://www.protezionecivile.gov.it/ns/>
 prefix l0: <https://w3id.org/italia/onto/l0/> 
+SELECT ?dataset ?label
+WHERE {
+?dataset a qb:Dataset;
+         rdfs:label ?label.
+}
 
-select ?areaName ?date ?hospitalizedWithSympthoms ?intensiveCare 
+```
+
+* **Quali sono i dati sanitari totali italiani del 25 marzo 2020?** 
+
+[Demo](http://45.62.242.205:8890/sparql?default-graph-uri=&query=PREFIX+qb%3A+%3Chttp%3A%2F%2Fpurl.org%2Flinked-data%2Fcube%23%3E+%0D%0APREFIX+sdmx-dimension%3A+%3Chttp%3A%2F%2Fpurl.org%2Flinked-data%2Fsdmx%2F2009%2Fdimension%23%3E+%0D%0APREFIX+dpc%3A+%3Chttp%3A%2F%2Fwww.protezionecivile.gov.it%2Fns%2F%3E%0D%0Aprefix+l0%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2Fl0%2F%3E+%0D%0A%0D%0Aselect+%3Farea+%3Fdate+%3FhospitalizedWithSymptoms+%3FintensiveCare+%0D%0A%3FtotalHospitalized+%3FhomeIsolation+%3FtotalPositive+%0D%0A%3FnewPositive+%3FtotalPositiveVariation+%3Fhealed+%3Fdeads+%3FtotalCases+%3Fswabs%0D%0AWHERE%0D%0A%7B%0D%0A++++%3Fobs+a+qb%3AObservation%3B%0D%0A+++++++++qb%3Adataset+%3Chttp%3A%2F%2Fwww.protezionecivile.gov.it%2Fdataset%2Fcovid19%2Fnational-trend%3E%3B%0D%0A+++++++++sdmx-dimension%3ArefTime+%3Fdate%3B%0D%0A+++++++++sdmx-dimension%3ArefArea+%3Farea%3B%0D%0A+++++++++dpc%3AhospitalizedWithSymptoms+%3FhospitalizedWithSymptoms+%3B%0D%0A+++++++++dpc%3AintensiveCare+%3FintensiveCare+%3B%0D%0A+++++++++dpc%3AtotalHospitalized+%3FtotalHospitalized+%3B%0D%0A+++++++++dpc%3AhomeIsolation+%3FhomeIsolation+%3B%0D%0A+++++++++dpc%3AtotalPositive+%3FtotalPositive+%3B%0D%0A+++++++++dpc%3AnewPositive+%3FnewPositive+%3B%0D%0A+++++++++dpc%3AtotalPositiveVariation+%3FtotalPositiveVariation+%3B%0D%0A+++++++++dpc%3Ahealed+%3Fhealed+%3B%0D%0A+++++++++dpc%3Adeads+%3Fdeads+%3B%0D%0A+++++++++dpc%3AtotalCases+%3FtotalCases+%3B%0D%0A+++++++++dpc%3Aswabs+%3Fswabs+.%0D%0A+++++++++FILTER%28%3Fdate+%3D+%222020-03-25%22%5E%5Exsd%3Adate%29.%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on)
+```sparql
+PREFIX qb: <http://purl.org/linked-data/cube#> 
+PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> 
+PREFIX dpc: <http://www.protezionecivile.gov.it/ns/>
+prefix l0: <https://w3id.org/italia/onto/l0/> 
+
+select ?area ?date ?hospitalizedWithSymptoms ?intensiveCare 
 ?totalHospitalized ?homeIsolation ?totalPositive 
 ?newPositive ?totalPositiveVariation ?healed ?deads ?totalCases ?swabs
 WHERE
 {
     ?obs a qb:Observation;
-         qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/regional-trend>;
+         qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend>;
          sdmx-dimension:refTime ?date;
          sdmx-dimension:refArea ?area;
-         dpc:hospitalizedWithSympthoms ?hospitalizedWithSympthoms ;
+         dpc:hospitalizedWithSymptoms ?hospitalizedWithSymptoms ;
          dpc:intensiveCare ?intensiveCare ;
          dpc:totalHospitalized ?totalHospitalized ;
          dpc:homeIsolation ?homeIsolation ;
@@ -205,14 +225,74 @@ WHERE
          dpc:deads ?deads ;
          dpc:totalCases ?totalCases ;
          dpc:swabs ?swabs .
-         FILTER(?date = "2020-03-20"^^xsd:date).
-         SERVICE <https://ontopia-virtuoso.prod.pdnd.italia.it/sparql>
-         {
-         ?area l0:name "Lombardia"@it;
-               l0:name ?areaName.
-         } 
+         FILTER(?date = "2020-03-25"^^xsd:date).
 }
 ```
+
+* **Quali sono i dati sanitari della regione Lombardia del 25 marzo 2020?**
+ 
+ *Per motivi di performance sono stati caricati nello store anche i vocabolari controllati di  [Ontopia](https://github.com/italia/daf-ontologie-vocabolari-controllati).*
+
+[Demo](http://45.62.242.205:8890/sparql?default-graph-uri=&query=PREFIX+qb%3A+%3Chttp%3A%2F%2Fpurl.org%2Flinked-data%2Fcube%23%3E+%0D%0APREFIX+sdmx-dimension%3A+%3Chttp%3A%2F%2Fpurl.org%2Flinked-data%2Fsdmx%2F2009%2Fdimension%23%3E+%0D%0APREFIX+dpc%3A+%3Chttp%3A%2F%2Fwww.protezionecivile.gov.it%2Fns%2F%3E%0D%0Aprefix+l0%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2Fl0%2F%3E+%0D%0A%0D%0Aselect+%3Fobs+%3FareaName+%3Fdate+%3FintensiveCare+%0D%0A+++++++%3FtotalHospitalized+%3FtotalPositive+%3FhomeIsolation+%0D%0A+++++++%3FnewPositive+%3FtotalPositiveVariation+%0D%0A+++++++%3Fhealed+%3Fdeads+%3FtotalCases+%3Fswabs%0D%0AWHERE%0D%0A%7B%0D%0A++++%3Fobs+a+qb%3AObservation%3B%0D%0A+++++++++qb%3Adataset+%3Chttp%3A%2F%2Fwww.protezionecivile.gov.it%2Fdataset%2Fcovid19%2Fregional-trend%3E%3B%0D%0A+++++++++sdmx-dimension%3ArefTime+%3Fdate%3B%0D%0A+++++++++sdmx-dimension%3ArefArea+%3Farea%3B%0D%0A+++++++++dpc%3AtotalHospitalized+%3FtotalHospitalized+%3B%0D%0A+++++++++dpc%3AintensiveCare+%3FintensiveCare+%3B%0D%0A+++++++++dpc%3AhomeIsolation+%3FhomeIsolation+%3B%0D%0A+++++++++dpc%3AtotalPositive+%3FtotalPositive+%3B%0D%0A+++++++++dpc%3AnewPositive+%3FnewPositive+%3B%0D%0A+++++++++dpc%3AtotalCases+%3FtotalCases+%3B%0D%0A+++++++++dpc%3AtotalPositiveVariation+%3FtotalPositiveVariation+%3B%0D%0A+++++++++dpc%3Adeads+%3Fdeads+%3B%0D%0A+++++++++dpc%3Ahealed+%3Fhealed+%3B%0D%0A+++++++++dpc%3Aswabs+%3Fswabs+.%0D%0A+++++++++%3Farea+l0%3Aname+%3FareaName.%0D%0A+++++++++FILTER+regex%28%3FareaName%2C%22%5ELombardia%22%2C%22i%22%29.%0D%0A+++++++++FILTER%28%3Fdate+%3D+%222020-03-25%22%5E%5Exsd%3Adate%29.%0D%0A%7D&format=text%2Fhtml&timeout=0&debug=on)
+
+```sparql
+PREFIX qb: <http://purl.org/linked-data/cube#> 
+PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> 
+PREFIX dpc: <http://www.protezionecivile.gov.it/ns/>
+prefix l0: <https://w3id.org/italia/onto/l0/> 
+
+select ?obs ?areaName ?date ?intensiveCare 
+       ?totalHospitalized ?totalPositive ?homeIsolation 
+       ?newPositive ?totalPositiveVariation 
+       ?healed ?deads ?totalCases ?swabs
+WHERE
+{
+    ?obs a qb:Observation;
+         qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/regional-trend>;
+         sdmx-dimension:refTime ?date;
+         sdmx-dimension:refArea ?area;
+         dpc:totalHospitalized ?totalHospitalized ;
+         dpc:intensiveCare ?intensiveCare ;
+         dpc:homeIsolation ?homeIsolation ;
+         dpc:totalPositive ?totalPositive ;
+         dpc:newPositive ?newPositive ;
+         dpc:totalCases ?totalCases ;
+         dpc:totalPositiveVariation ?totalPositiveVariation ;
+         dpc:deads ?deads ;
+         dpc:healed ?healed ;
+         dpc:swabs ?swabs .
+         ?area l0:name ?areaName.
+         FILTER regex(?areaName,"^Lombardia","i").
+         FILTER(?date = "2020-03-25"^^xsd:date).
+}
+```
+
+* **Quali sono i casi totali della provincia di Lodi?**
+ 
+ *Per motivi di performance sono stati caricati nello store anche i vocabolari controllati di  [Ontopia](https://github.com/italia/daf-ontologie-vocabolari-controllati).*
+
+[Demo](http://45.62.242.205:8890/sparql?default-graph-uri=&query=PREFIX+qb%3A+%3Chttp%3A%2F%2Fpurl.org%2Flinked-data%2Fcube%23%3E+%0D%0APREFIX+sdmx-dimension%3A+%3Chttp%3A%2F%2Fpurl.org%2Flinked-data%2Fsdmx%2F2009%2Fdimension%23%3E+%0D%0APREFIX+dpc%3A+%3Chttp%3A%2F%2Fwww.protezionecivile.gov.it%2Fns%2F%3E%0D%0Aprefix+l0%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2Fl0%2F%3E+%0D%0A%0D%0Aselect+%3FareaName+%3Fdate+%3FtotalCases+%0D%0AWHERE%0D%0A%7B%0D%0A++++%3Fobs+a+qb%3AObservation%3B%0D%0A+++++++++qb%3Adataset+%3Chttp%3A%2F%2Fwww.protezionecivile.gov.it%2Fdataset%2Fcovid19%2Fprovincial-trend%3E%3B%0D%0A+++++++++sdmx-dimension%3ArefTime+%3Fdate%3B%0D%0A+++++++++sdmx-dimension%3ArefArea+%3Farea%3B%0D%0A+++++++++dpc%3AtotalCases+%3FtotalCases+.%0D%0A+++++++++%3Farea+l0%3Aname+%3FareaName.%0D%0A+++++++++FILTER+regex%28%3FareaName%2C%22%5ELodi%22%2C%22i%22%29.%0D%0A%7D%0D%0AORDER+BY+DESC%28%3Fdate%29&format=text%2Fhtml&timeout=0&debug=on)
+
+```sparql
+PREFIX qb: <http://purl.org/linked-data/cube#> 
+PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> 
+PREFIX dpc: <http://www.protezionecivile.gov.it/ns/>
+prefix l0: <https://w3id.org/italia/onto/l0/> 
+
+select ?areaName ?date ?totalCases 
+WHERE
+{
+    ?obs a qb:Observation;
+         qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/provincial-trend>;
+         sdmx-dimension:refTime ?date;
+         sdmx-dimension:refArea ?area;
+         dpc:totalCases ?totalCases .
+         ?area l0:name ?areaName.
+         FILTER regex(?areaName,"^Lodi","i").
+}
+ORDER BY DESC(?date)
+```
+
 
 ## Ulteriori sviluppi
 
