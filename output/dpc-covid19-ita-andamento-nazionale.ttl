@@ -1,0 +1,818 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dpc: <http://www.protezionecivile.gov.it/ns/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200224> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 24/02/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-02-24"^^xsd:date ;
+    dpc:deads "7"^^xsd:int ;
+    dpc:healed "1"^^xsd:int ;
+    dpc:homeIsolation "94"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "101"^^xsd:int ;
+    dpc:intensiveCare "26"^^xsd:int ;
+    dpc:newPositive "221"^^xsd:int ;
+    dpc:swabs "4324"^^xsd:int ;
+    dpc:totalCases "229"^^xsd:int ;
+    dpc:totalHospitalized "127"^^xsd:int ;
+    dpc:totalPositive "221"^^xsd:int ;
+    dpc:totalPositiveVariation "0"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200225> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 25/02/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-02-25"^^xsd:date ;
+    dpc:deads "10"^^xsd:int ;
+    dpc:healed "1"^^xsd:int ;
+    dpc:homeIsolation "162"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "114"^^xsd:int ;
+    dpc:intensiveCare "35"^^xsd:int ;
+    dpc:newPositive "93"^^xsd:int ;
+    dpc:swabs "8623"^^xsd:int ;
+    dpc:totalCases "322"^^xsd:int ;
+    dpc:totalHospitalized "150"^^xsd:int ;
+    dpc:totalPositive "311"^^xsd:int ;
+    dpc:totalPositiveVariation "90"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200226> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 26/02/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-02-26"^^xsd:date ;
+    dpc:deads "12"^^xsd:int ;
+    dpc:healed "3"^^xsd:int ;
+    dpc:homeIsolation "221"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "128"^^xsd:int ;
+    dpc:intensiveCare "36"^^xsd:int ;
+    dpc:newPositive "78"^^xsd:int ;
+    dpc:swabs "9587"^^xsd:int ;
+    dpc:totalCases "400"^^xsd:int ;
+    dpc:totalHospitalized "164"^^xsd:int ;
+    dpc:totalPositive "385"^^xsd:int ;
+    dpc:totalPositiveVariation "74"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200227> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 27/02/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-02-27"^^xsd:date ;
+    dpc:deads "17"^^xsd:int ;
+    dpc:healed "45"^^xsd:int ;
+    dpc:homeIsolation "284"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "248"^^xsd:int ;
+    dpc:intensiveCare "56"^^xsd:int ;
+    dpc:newPositive "250"^^xsd:int ;
+    dpc:swabs "12014"^^xsd:int ;
+    dpc:totalCases "650"^^xsd:int ;
+    dpc:totalHospitalized "304"^^xsd:int ;
+    dpc:totalPositive "588"^^xsd:int ;
+    dpc:totalPositiveVariation "203"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200228> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 28/02/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-02-28"^^xsd:date ;
+    dpc:deads "21"^^xsd:int ;
+    dpc:healed "46"^^xsd:int ;
+    dpc:homeIsolation "412"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "345"^^xsd:int ;
+    dpc:intensiveCare "64"^^xsd:int ;
+    dpc:newPositive "238"^^xsd:int ;
+    dpc:swabs "15695"^^xsd:int ;
+    dpc:totalCases "888"^^xsd:int ;
+    dpc:totalHospitalized "409"^^xsd:int ;
+    dpc:totalPositive "821"^^xsd:int ;
+    dpc:totalPositiveVariation "233"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200229> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 29/02/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-02-29"^^xsd:date ;
+    dpc:deads "29"^^xsd:int ;
+    dpc:healed "50"^^xsd:int ;
+    dpc:homeIsolation "543"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "401"^^xsd:int ;
+    dpc:intensiveCare "105"^^xsd:int ;
+    dpc:newPositive "240"^^xsd:int ;
+    dpc:swabs "18661"^^xsd:int ;
+    dpc:totalCases "1128"^^xsd:int ;
+    dpc:totalHospitalized "506"^^xsd:int ;
+    dpc:totalPositive "1049"^^xsd:int ;
+    dpc:totalPositiveVariation "228"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200301> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 01/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-01"^^xsd:date ;
+    dpc:deads "34"^^xsd:int ;
+    dpc:healed "83"^^xsd:int ;
+    dpc:homeIsolation "798"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "639"^^xsd:int ;
+    dpc:intensiveCare "140"^^xsd:int ;
+    dpc:newPositive "566"^^xsd:int ;
+    dpc:swabs "21127"^^xsd:int ;
+    dpc:totalCases "1694"^^xsd:int ;
+    dpc:totalHospitalized "779"^^xsd:int ;
+    dpc:totalPositive "1577"^^xsd:int ;
+    dpc:totalPositiveVariation "528"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200302> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 02/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-02"^^xsd:date ;
+    dpc:deads "52"^^xsd:int ;
+    dpc:healed "149"^^xsd:int ;
+    dpc:homeIsolation "927"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "742"^^xsd:int ;
+    dpc:intensiveCare "166"^^xsd:int ;
+    dpc:newPositive "342"^^xsd:int ;
+    dpc:swabs "23345"^^xsd:int ;
+    dpc:totalCases "2036"^^xsd:int ;
+    dpc:totalHospitalized "908"^^xsd:int ;
+    dpc:totalPositive "1835"^^xsd:int ;
+    dpc:totalPositiveVariation "258"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200303> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 03/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-03"^^xsd:date ;
+    dpc:deads "79"^^xsd:int ;
+    dpc:healed "160"^^xsd:int ;
+    dpc:homeIsolation "1000"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "1034"^^xsd:int ;
+    dpc:intensiveCare "229"^^xsd:int ;
+    dpc:newPositive "466"^^xsd:int ;
+    dpc:swabs "25856"^^xsd:int ;
+    dpc:totalCases "2502"^^xsd:int ;
+    dpc:totalHospitalized "1263"^^xsd:int ;
+    dpc:totalPositive "2263"^^xsd:int ;
+    dpc:totalPositiveVariation "428"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200304> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 04/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-04"^^xsd:date ;
+    dpc:deads "107"^^xsd:int ;
+    dpc:healed "276"^^xsd:int ;
+    dpc:homeIsolation "1065"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "1346"^^xsd:int ;
+    dpc:intensiveCare "295"^^xsd:int ;
+    dpc:newPositive "587"^^xsd:int ;
+    dpc:swabs "29837"^^xsd:int ;
+    dpc:totalCases "3089"^^xsd:int ;
+    dpc:totalHospitalized "1641"^^xsd:int ;
+    dpc:totalPositive "2706"^^xsd:int ;
+    dpc:totalPositiveVariation "443"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200305> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 05/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-05"^^xsd:date ;
+    dpc:deads "148"^^xsd:int ;
+    dpc:healed "414"^^xsd:int ;
+    dpc:homeIsolation "1155"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "1790"^^xsd:int ;
+    dpc:intensiveCare "351"^^xsd:int ;
+    dpc:newPositive "769"^^xsd:int ;
+    dpc:swabs "32362"^^xsd:int ;
+    dpc:totalCases "3858"^^xsd:int ;
+    dpc:totalHospitalized "2141"^^xsd:int ;
+    dpc:totalPositive "3296"^^xsd:int ;
+    dpc:totalPositiveVariation "590"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200306> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 06/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-06"^^xsd:date ;
+    dpc:deads "197"^^xsd:int ;
+    dpc:healed "523"^^xsd:int ;
+    dpc:homeIsolation "1060"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "2394"^^xsd:int ;
+    dpc:intensiveCare "462"^^xsd:int ;
+    dpc:newPositive "778"^^xsd:int ;
+    dpc:swabs "36359"^^xsd:int ;
+    dpc:totalCases "4636"^^xsd:int ;
+    dpc:totalHospitalized "2856"^^xsd:int ;
+    dpc:totalPositive "3916"^^xsd:int ;
+    dpc:totalPositiveVariation "620"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200307> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 07/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-07"^^xsd:date ;
+    dpc:deads "233"^^xsd:int ;
+    dpc:healed "589"^^xsd:int ;
+    dpc:homeIsolation "1843"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "2651"^^xsd:int ;
+    dpc:intensiveCare "567"^^xsd:int ;
+    dpc:newPositive "1247"^^xsd:int ;
+    dpc:swabs "42062"^^xsd:int ;
+    dpc:totalCases "5883"^^xsd:int ;
+    dpc:totalHospitalized "3218"^^xsd:int ;
+    dpc:totalPositive "5061"^^xsd:int ;
+    dpc:totalPositiveVariation "1145"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200308> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 08/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-08"^^xsd:date ;
+    dpc:deads "366"^^xsd:int ;
+    dpc:healed "622"^^xsd:int ;
+    dpc:homeIsolation "2180"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "3557"^^xsd:int ;
+    dpc:intensiveCare "650"^^xsd:int ;
+    dpc:newPositive "1492"^^xsd:int ;
+    dpc:swabs "49937"^^xsd:int ;
+    dpc:totalCases "7375"^^xsd:int ;
+    dpc:totalHospitalized "4207"^^xsd:int ;
+    dpc:totalPositive "6387"^^xsd:int ;
+    dpc:totalPositiveVariation "1326"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200309> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 09/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-09"^^xsd:date ;
+    dpc:deads "463"^^xsd:int ;
+    dpc:healed "724"^^xsd:int ;
+    dpc:homeIsolation "2936"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "4316"^^xsd:int ;
+    dpc:intensiveCare "733"^^xsd:int ;
+    dpc:newPositive "1797"^^xsd:int ;
+    dpc:swabs "53826"^^xsd:int ;
+    dpc:totalCases "9172"^^xsd:int ;
+    dpc:totalHospitalized "5049"^^xsd:int ;
+    dpc:totalPositive "7985"^^xsd:int ;
+    dpc:totalPositiveVariation "1598"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200310> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 10/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-10"^^xsd:date ;
+    dpc:deads "631"^^xsd:int ;
+    dpc:healed "1004"^^xsd:int ;
+    dpc:homeIsolation "2599"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "5038"^^xsd:int ;
+    dpc:intensiveCare "877"^^xsd:int ;
+    dpc:newPositive "977"^^xsd:int ;
+    dpc:swabs "60761"^^xsd:int ;
+    dpc:totalCases "10149"^^xsd:int ;
+    dpc:totalHospitalized "5915"^^xsd:int ;
+    dpc:totalPositive "8514"^^xsd:int ;
+    dpc:totalPositiveVariation "529"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200311> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 11/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-11"^^xsd:date ;
+    dpc:deads "827"^^xsd:int ;
+    dpc:healed "1045"^^xsd:int ;
+    dpc:homeIsolation "3724"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "5838"^^xsd:int ;
+    dpc:intensiveCare "1028"^^xsd:int ;
+    dpc:newPositive "2313"^^xsd:int ;
+    dpc:swabs "73154"^^xsd:int ;
+    dpc:totalCases "12462"^^xsd:int ;
+    dpc:totalHospitalized "6866"^^xsd:int ;
+    dpc:totalPositive "10590"^^xsd:int ;
+    dpc:totalPositiveVariation "2076"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200312> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 12/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-12"^^xsd:date ;
+    dpc:deads "1016"^^xsd:int ;
+    dpc:healed "1258"^^xsd:int ;
+    dpc:homeIsolation "5036"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "6650"^^xsd:int ;
+    dpc:intensiveCare "1153"^^xsd:int ;
+    dpc:newPositive "2651"^^xsd:int ;
+    dpc:swabs "86011"^^xsd:int ;
+    dpc:totalCases "15113"^^xsd:int ;
+    dpc:totalHospitalized "7803"^^xsd:int ;
+    dpc:totalPositive "12839"^^xsd:int ;
+    dpc:totalPositiveVariation "2249"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200313> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 13/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-13"^^xsd:date ;
+    dpc:deads "1266"^^xsd:int ;
+    dpc:healed "1439"^^xsd:int ;
+    dpc:homeIsolation "6201"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "7426"^^xsd:int ;
+    dpc:intensiveCare "1328"^^xsd:int ;
+    dpc:newPositive "2547"^^xsd:int ;
+    dpc:swabs "97488"^^xsd:int ;
+    dpc:totalCases "17660"^^xsd:int ;
+    dpc:totalHospitalized "8754"^^xsd:int ;
+    dpc:totalPositive "14955"^^xsd:int ;
+    dpc:totalPositiveVariation "2116"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200314> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 14/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-14"^^xsd:date ;
+    dpc:deads "1441"^^xsd:int ;
+    dpc:healed "1966"^^xsd:int ;
+    dpc:homeIsolation "7860"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "8372"^^xsd:int ;
+    dpc:intensiveCare "1518"^^xsd:int ;
+    dpc:newPositive "3497"^^xsd:int ;
+    dpc:swabs "109170"^^xsd:int ;
+    dpc:totalCases "21157"^^xsd:int ;
+    dpc:totalHospitalized "9890"^^xsd:int ;
+    dpc:totalPositive "17750"^^xsd:int ;
+    dpc:totalPositiveVariation "2795"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200315> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 15/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-15"^^xsd:date ;
+    dpc:deads "1809"^^xsd:int ;
+    dpc:healed "2335"^^xsd:int ;
+    dpc:homeIsolation "9268"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "9663"^^xsd:int ;
+    dpc:intensiveCare "1672"^^xsd:int ;
+    dpc:newPositive "3590"^^xsd:int ;
+    dpc:swabs "124899"^^xsd:int ;
+    dpc:totalCases "24747"^^xsd:int ;
+    dpc:totalHospitalized "11335"^^xsd:int ;
+    dpc:totalPositive "20603"^^xsd:int ;
+    dpc:totalPositiveVariation "2853"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200316> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 16/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-16"^^xsd:date ;
+    dpc:deads "2158"^^xsd:int ;
+    dpc:healed "2749"^^xsd:int ;
+    dpc:homeIsolation "10197"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "11025"^^xsd:int ;
+    dpc:intensiveCare "1851"^^xsd:int ;
+    dpc:newPositive "3233"^^xsd:int ;
+    dpc:swabs "137962"^^xsd:int ;
+    dpc:totalCases "27980"^^xsd:int ;
+    dpc:totalHospitalized "12876"^^xsd:int ;
+    dpc:totalPositive "23073"^^xsd:int ;
+    dpc:totalPositiveVariation "2470"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200317> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 17/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-17"^^xsd:date ;
+    dpc:deads "2503"^^xsd:int ;
+    dpc:healed "2941"^^xsd:int ;
+    dpc:homeIsolation "11108"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "12894"^^xsd:int ;
+    dpc:intensiveCare "2060"^^xsd:int ;
+    dpc:newPositive "3526"^^xsd:int ;
+    dpc:swabs "148657"^^xsd:int ;
+    dpc:totalCases "31506"^^xsd:int ;
+    dpc:totalHospitalized "14954"^^xsd:int ;
+    dpc:totalPositive "26062"^^xsd:int ;
+    dpc:totalPositiveVariation "2989"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200318> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 18/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-18"^^xsd:date ;
+    dpc:deads "2978"^^xsd:int ;
+    dpc:healed "4025"^^xsd:int ;
+    dpc:homeIsolation "12090"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "14363"^^xsd:int ;
+    dpc:intensiveCare "2257"^^xsd:int ;
+    dpc:newPositive "4207"^^xsd:int ;
+    dpc:swabs "165541"^^xsd:int ;
+    dpc:totalCases "35713"^^xsd:int ;
+    dpc:totalHospitalized "16620"^^xsd:int ;
+    dpc:totalPositive "28710"^^xsd:int ;
+    dpc:totalPositiveVariation "2648"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200319> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 19/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-19"^^xsd:date ;
+    dpc:deads "3405"^^xsd:int ;
+    dpc:healed "4440"^^xsd:int ;
+    dpc:homeIsolation "14935"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "15757"^^xsd:int ;
+    dpc:intensiveCare "2498"^^xsd:int ;
+    dpc:newPositive "5322"^^xsd:int ;
+    dpc:swabs "182777"^^xsd:int ;
+    dpc:totalCases "41035"^^xsd:int ;
+    dpc:totalHospitalized "18255"^^xsd:int ;
+    dpc:totalPositive "33190"^^xsd:int ;
+    dpc:totalPositiveVariation "4480"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200320> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 20/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-20"^^xsd:date ;
+    dpc:deads "4032"^^xsd:int ;
+    dpc:healed "5129"^^xsd:int ;
+    dpc:homeIsolation "19185"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "16020"^^xsd:int ;
+    dpc:intensiveCare "2655"^^xsd:int ;
+    dpc:newPositive "5986"^^xsd:int ;
+    dpc:swabs "206886"^^xsd:int ;
+    dpc:totalCases "47021"^^xsd:int ;
+    dpc:totalHospitalized "18675"^^xsd:int ;
+    dpc:totalPositive "37860"^^xsd:int ;
+    dpc:totalPositiveVariation "4670"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200321> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 21/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-21"^^xsd:date ;
+    dpc:deads "4825"^^xsd:int ;
+    dpc:healed "6072"^^xsd:int ;
+    dpc:homeIsolation "22116"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "17708"^^xsd:int ;
+    dpc:intensiveCare "2857"^^xsd:int ;
+    dpc:newPositive "6557"^^xsd:int ;
+    dpc:swabs "233222"^^xsd:int ;
+    dpc:totalCases "53578"^^xsd:int ;
+    dpc:totalHospitalized "20565"^^xsd:int ;
+    dpc:totalPositive "42681"^^xsd:int ;
+    dpc:totalPositiveVariation "4821"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200322> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 22/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-22"^^xsd:date ;
+    dpc:deads "5476"^^xsd:int ;
+    dpc:healed "7024"^^xsd:int ;
+    dpc:homeIsolation "23783"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "19846"^^xsd:int ;
+    dpc:intensiveCare "3009"^^xsd:int ;
+    dpc:newPositive "5560"^^xsd:int ;
+    dpc:swabs "258402"^^xsd:int ;
+    dpc:totalCases "59138"^^xsd:int ;
+    dpc:totalHospitalized "22855"^^xsd:int ;
+    dpc:totalPositive "46638"^^xsd:int ;
+    dpc:totalPositiveVariation "3957"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200323> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 23/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-23"^^xsd:date ;
+    dpc:deads "6077"^^xsd:int ;
+    dpc:healed "7432"^^xsd:int ;
+    dpc:homeIsolation "26522"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "20692"^^xsd:int ;
+    dpc:intensiveCare "3204"^^xsd:int ;
+    dpc:newPositive "4789"^^xsd:int ;
+    dpc:swabs "275468"^^xsd:int ;
+    dpc:totalCases "63927"^^xsd:int ;
+    dpc:totalHospitalized "23896"^^xsd:int ;
+    dpc:totalPositive "50418"^^xsd:int ;
+    dpc:totalPositiveVariation "3780"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200324> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 24/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-24"^^xsd:date ;
+    dpc:deads "6820"^^xsd:int ;
+    dpc:healed "8326"^^xsd:int ;
+    dpc:homeIsolation "28697"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "21937"^^xsd:int ;
+    dpc:intensiveCare "3396"^^xsd:int ;
+    dpc:newPositive "5249"^^xsd:int ;
+    dpc:swabs "296964"^^xsd:int ;
+    dpc:totalCases "69176"^^xsd:int ;
+    dpc:totalHospitalized "25333"^^xsd:int ;
+    dpc:totalPositive "54030"^^xsd:int ;
+    dpc:totalPositiveVariation "3612"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200325> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 25/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-25"^^xsd:date ;
+    dpc:deads "7503"^^xsd:int ;
+    dpc:healed "9362"^^xsd:int ;
+    dpc:homeIsolation "30920"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "23112"^^xsd:int ;
+    dpc:intensiveCare "3489"^^xsd:int ;
+    dpc:newPositive "5210"^^xsd:int ;
+    dpc:swabs "324445"^^xsd:int ;
+    dpc:totalCases "74386"^^xsd:int ;
+    dpc:totalHospitalized "26601"^^xsd:int ;
+    dpc:totalPositive "57521"^^xsd:int ;
+    dpc:totalPositiveVariation "3491"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200326> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 26/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-26"^^xsd:date ;
+    dpc:deads "8165"^^xsd:int ;
+    dpc:healed "10361"^^xsd:int ;
+    dpc:homeIsolation "33648"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "24753"^^xsd:int ;
+    dpc:intensiveCare "3612"^^xsd:int ;
+    dpc:newPositive "6153"^^xsd:int ;
+    dpc:swabs "361060"^^xsd:int ;
+    dpc:totalCases "80539"^^xsd:int ;
+    dpc:totalHospitalized "28365"^^xsd:int ;
+    dpc:totalPositive "62013"^^xsd:int ;
+    dpc:totalPositiveVariation "4492"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200327> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 27/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-27"^^xsd:date ;
+    dpc:deads "9134"^^xsd:int ;
+    dpc:healed "10950"^^xsd:int ;
+    dpc:homeIsolation "36653"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "26029"^^xsd:int ;
+    dpc:intensiveCare "3732"^^xsd:int ;
+    dpc:newPositive "5959"^^xsd:int ;
+    dpc:swabs "394079"^^xsd:int ;
+    dpc:totalCases "86498"^^xsd:int ;
+    dpc:totalHospitalized "29761"^^xsd:int ;
+    dpc:totalPositive "66414"^^xsd:int ;
+    dpc:totalPositiveVariation "4401"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200328> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 28/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-28"^^xsd:date ;
+    dpc:deads "10023"^^xsd:int ;
+    dpc:healed "12384"^^xsd:int ;
+    dpc:homeIsolation "39533"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "26676"^^xsd:int ;
+    dpc:intensiveCare "3856"^^xsd:int ;
+    dpc:newPositive "5974"^^xsd:int ;
+    dpc:swabs "429526"^^xsd:int ;
+    dpc:totalCases "92472"^^xsd:int ;
+    dpc:totalHospitalized "30532"^^xsd:int ;
+    dpc:totalPositive "70065"^^xsd:int ;
+    dpc:totalPositiveVariation "3651"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200329> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 29/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-29"^^xsd:date ;
+    dpc:deads "10779"^^xsd:int ;
+    dpc:healed "13030"^^xsd:int ;
+    dpc:homeIsolation "42588"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "27386"^^xsd:int ;
+    dpc:intensiveCare "3906"^^xsd:int ;
+    dpc:newPositive "5217"^^xsd:int ;
+    dpc:swabs "454030"^^xsd:int ;
+    dpc:totalCases "97689"^^xsd:int ;
+    dpc:totalHospitalized "31292"^^xsd:int ;
+    dpc:totalPositive "73880"^^xsd:int ;
+    dpc:totalPositiveVariation "3815"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200330> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 30/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-30"^^xsd:date ;
+    dpc:deads "11591"^^xsd:int ;
+    dpc:healed "14620"^^xsd:int ;
+    dpc:homeIsolation "43752"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "27795"^^xsd:int ;
+    dpc:intensiveCare "3981"^^xsd:int ;
+    dpc:newPositive "4050"^^xsd:int ;
+    dpc:swabs "477359"^^xsd:int ;
+    dpc:totalCases "101739"^^xsd:int ;
+    dpc:totalHospitalized "31776"^^xsd:int ;
+    dpc:totalPositive "75528"^^xsd:int ;
+    dpc:totalPositiveVariation "1648"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200331> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 31/03/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-03-31"^^xsd:date ;
+    dpc:deads "12428"^^xsd:int ;
+    dpc:healed "15729"^^xsd:int ;
+    dpc:homeIsolation "45420"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "28192"^^xsd:int ;
+    dpc:intensiveCare "4023"^^xsd:int ;
+    dpc:newPositive "4053"^^xsd:int ;
+    dpc:swabs "506968"^^xsd:int ;
+    dpc:totalCases "105792"^^xsd:int ;
+    dpc:totalHospitalized "32215"^^xsd:int ;
+    dpc:totalPositive "77635"^^xsd:int ;
+    dpc:totalPositiveVariation "2107"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/observations/20200401> a qb:Observation ;
+    rdfs:label "Andamento nazionale di giorno 01/04/2020"^^xsd:string ;
+    qb:dataset <http://www.protezionecivile.gov.it/dataset/covid19/national-trend> ;
+    sdmx-dimension:refArea <https://w3id.org/italia/controlled-vocabulary/territorial-classifications/countries/italy/ITA> ;
+    sdmx-dimension:refTime "2020-04-01"^^xsd:date ;
+    dpc:deads "13155"^^xsd:int ;
+    dpc:healed "16847"^^xsd:int ;
+    dpc:homeIsolation "48134"^^xsd:int ;
+    dpc:hospitalizedWithSymptoms "28403"^^xsd:int ;
+    dpc:intensiveCare "4035"^^xsd:int ;
+    dpc:newPositive "4782"^^xsd:int ;
+    dpc:swabs "541423"^^xsd:int ;
+    dpc:totalCases "110574"^^xsd:int ;
+    dpc:totalHospitalized "32438"^^xsd:int ;
+    dpc:totalPositive "80572"^^xsd:int ;
+    dpc:totalPositiveVariation "2937"^^xsd:int .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend/dsd> a qb:DataStructureDefinition ;
+    qb:component [ a qb:ComponentSpecification ;
+            qb:measure dpc:totalPositive ;
+            rdfs:range xsd:integer ],
+        [ a qb:ComponentSpecification ;
+            qb:measure dpc:deads ;
+            rdfs:range xsd:integer ],
+        [ a qb:ComponentSpecification ;
+            qb:dimension sdmx-dimension:refArea ],
+        [ a qb:ComponentSpecification ;
+            qb:measure dpc:hospitalizedWithSymptoms ;
+            rdfs:range xsd:integer ],
+        [ a qb:ComponentSpecification ;
+            qb:attribute sdmx-attribute:unitMeasure ],
+        [ a qb:ComponentSpecification ;
+            qb:measure dpc:homeIsolation ;
+            rdfs:range xsd:integer ],
+        [ a qb:ComponentSpecification ;
+            qb:measure dpc:totalCases ;
+            rdfs:range xsd:integer ],
+        [ a qb:ComponentSpecification ;
+            qb:measure dpc:SWABS ;
+            rdfs:range xsd:integer ],
+        [ a qb:ComponentSpecification ;
+            qb:measure dpc:healed ;
+            rdfs:range xsd:integer ],
+        [ a qb:ComponentSpecification ;
+            qb:measure dpc:totalPositiveVariation ;
+            rdfs:range xsd:integer ],
+        [ a qb:ComponentSpecification ;
+            qb:dimension sdmx-dimension:refTime ],
+        [ a qb:ComponentSpecification ;
+            qb:measure dpc:intensiveCare ;
+            rdfs:range xsd:integer ],
+        [ a qb:ComponentSpecification ;
+            qb:measure dpc:newPositive ;
+            rdfs:range xsd:integer ],
+        dpc:totalHospitalized ;
+    rdfs:comment "Specifica dei componenti (dimensioni, misure, attributi)"@IT .
+
+dpc:SWABS a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Swabs"@EN,
+        "Tamponi"@IT ;
+    dct:description "Swabs"@EN,
+        "Tamponi"@IT ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    skos:notation "Swabs"@EN,
+        "Tamponi"@IT .
+
+dpc:deads a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Deads"@EN,
+        "Deceduti"@IT ;
+    dct:description "Deads"@EN,
+        "Deceduti"@IT ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    skos:notation "Deads"@EN,
+        "Deceduti"@IT .
+
+dpc:healed a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Healed"@EN,
+        "Dimessi guariti"@IT ;
+    dct:description "Healed"@EN,
+        "Dimessi guariti"@IT ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    skos:notation "Healed"@EN,
+        "Dimessi guariti"@IT .
+
+dpc:homeIsolation a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Home isolation"@EN,
+        "Isolamento domiciliare"@IT ;
+    dct:description "Home isolation"@EN,
+        "Isolamento domiciliare"@IT ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    skos:notation "Home isolation"@EN,
+        "Isolamento domiciliare"@IT .
+
+dpc:hospitalizedWithSymptoms a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Hospitalized with symptoms"@EN,
+        "Ricoverati con sintomi"@IT ;
+    dct:description "hospitalized with symptoms"@EN,
+        "Ricoverati con sintomi"@IT ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    skos:notation "Hospitalized with symptoms"@EN,
+        "Ricoverati con sintomi"@IT .
+
+dpc:intensiveCare a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Intensive care"@EN,
+        "Terapia intensiva"@IT ;
+    dct:description "Intensive care"@EN,
+        "Terapia intensiva"@IT ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    skos:notation "Intensive care"@EN,
+        "Terapia intensiva"@IT .
+
+dpc:newPositive a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "New positive"@EN,
+        "Nuovi positivi"@IT ;
+    dct:description "New positive"@EN,
+        "Nuovi positivi"@IT ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    skos:notation "New positive"@EN,
+        "Nuovi positivi"@IT .
+
+dpc:totalCases a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Total cases"@EN,
+        "Totale casi"@IT ;
+    dct:description "Total cases"@EN,
+        "Totale casi"@IT ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    skos:notation "Total cases"@EN,
+        "Totale casi"@IT .
+
+dpc:totalPositive a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Total positive"@EN,
+        "Totale positivi"@IT ;
+    dct:description "Total positive"@EN,
+        "Totale positivi"@IT ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    skos:notation "Total positive"@EN,
+        "Totale positivi"@IT .
+
+dpc:totalPositiveVariation a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Total positive variation"@EN,
+        "Variazione totale positivi"@IT ;
+    dct:description "Total positive variation"@EN,
+        "Variazione totale positivi"@IT ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    skos:notation "Total positive variation"@EN,
+        "Variazione totale positivi"@IT .
+
+dpc:totalHospitalized a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "Total hospitalized"@EN,
+        "Totale ospedalizzati"@IT ;
+    dct:description "Total hospitalized"@EN,
+        "Totale ospedalizzati"@IT ;
+    rdfs:subPropertyOf sdmx-measure:obsValue ;
+    skos:notation "Total hospitalized"@EN,
+        "Totale ospedalizzati"@IT .
+
+<http://www.protezionecivile.gov.it/dataset/covid19/national-trend> a qb:Dataset ;
+    rdfs:label "CoVid-19 - Andamento Nazionale"@IT ;
+    dct:title "CoVid-19 - Andamento Nazionale"@IT ;
+    qb:structure <http://www.protezionecivile.gov.it/dataset/covid19/national-trend/dsd> ;
+    rdfs:comment "CoVid-19 - Andamento Nazionale"@IT .
+
+[] a qb:ComponentSpecification ;
+    qb:measure dpc:totalHospitalized ;
+    rdfs:range xsd:integer .
+
