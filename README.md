@@ -1,4 +1,4 @@
-## COVID-19 DPC Semantic Web - RDF Data Cube Vocabulary
+## COVID-19 Semantic Web - DPC RDF Data Cube Vocabulary Project
 
 Il progetto intende modellare i dataset del monitoraggio sanitario COVID-19 in Italia, 
 pubblicati dalla Protezione Civile quotidianamente, disponibili  sul
